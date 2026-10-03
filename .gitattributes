@@ -1,0 +1,13 @@
+# 统一按 LF 存储在仓库中（Windows 上 cmd 与 gcc 均可正常处理 LF 的 .bat / .c）
+* text=auto eol=lf
+
+# 二进制文件不做行尾转换
+*.exe binary
+*.ico binary
+*.png binary
+
+# 语法高亮 / diff
+*.c   text
+*.h   text
+*.rc  text
+*.yml text
