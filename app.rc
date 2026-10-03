@@ -1,0 +1,35 @@
+#include <windows.h>
+
+/* 应用程序图标（多尺寸：16/32/48，由 make_icon.c 生成） */
+1 ICON "app.ico"
+
+/* 清单：DPI 感知 + 视觉样式 */
+1 24 "app.manifest"
+
+/* 版本与说明信息（英文 ASCII，避免 windres 编码转换问题；
+   程序界面本身使用 Unicode 中文） */
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+FILEOS          VOS_NT_WINDOWS32
+FILETYPE        VFT_APP
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "080404B0"
+    BEGIN
+      VALUE "CompanyName",      "Buckshot Roulette Tools"
+      VALUE "FileDescription",  "Buckshot Roulette Ammo Counter"
+      VALUE "FileVersion",      "1.0.0.0"
+      VALUE "InternalName",     "BuckshotCounter"
+      VALUE "LegalCopyright",   "Free to use"
+      VALUE "OriginalFilename", "BuckshotCounter.exe"
+      VALUE "ProductName",      "Buckshot Roulette Ammo Counter"
+      VALUE "ProductVersion",   "1.0.0.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x804, 1200
+  END
+END
